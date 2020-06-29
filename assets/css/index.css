@@ -1,0 +1,83 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2e2e2e;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: green;
+}
+.h60{
+    width:100%;
+    height: 60%;
+    background: #000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.h60 img{
+    height: 100%;
+}
+.h40{
+    width: 100%;
+    height: 40%;
+    background: #000;
+    display: flex;
+
+}
+.h4020{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16pt;
+}
+.h4060{
+    width: 60%;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  CORPO DA APLICAÇÃO */
+
+.body{
+
+    width: 100%;
+    height: calc(100% - 70px);
+    
+}
+
+
+
+/* CARROSEL */
+
+.carrosel{
+
+    width: 100%;
+    height: 200px;
+    
+}
+
+.itemC{
+
+    width: 100%;
+    display: none;
+
+}
