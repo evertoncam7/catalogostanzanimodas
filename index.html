@@ -10,11 +10,11 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="id_container" class="container">
 
         <div class="header">
             <div class="h60">
-                <img src="assets/images/logo.jpg" alt="">
+                <!-- <img src="assets/images/logo.jpg" alt=""> -->
             </div>
             <div class="h40">
                 <div class="h4020">
@@ -34,6 +34,23 @@
                 
             </div>
 
+            <div class="bx_sociais">
+                <span>Nos sigam em nossas redes sociais!</span>
+
+                <div class="btn_sociais insta">
+                    <span class="icon-instagrem">Instagram</span>
+                </div>
+
+                <div class="btn_sociais face">
+                    <span class="icon-social-facebook">Facebook</span>
+                </div>
+
+                <div class="btn_sociais youtube">
+                    <span class="icon-youtube-alt">Youtube</span>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -43,6 +60,7 @@
     
 </body>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <script>
         $(function(){
 
@@ -71,6 +89,8 @@
 
             $(".itemC:eq(0)").fadeIn();
 
+            
+
             function slide(){
 
 
@@ -92,6 +112,49 @@
             const sl = setInterval(function(){
                 slide();
             }, 5000);
+
+
+          
+            $(".btn_sociais").css({
+                Transform:"TranslateX(0px)",
+                transition:"1s all"
+            });    
+
+
+            // BOTÃO MENU BARS
+
+            $(".icon-bars").on("click", function(){
+                $(".container_menu").fadeIn(function(){
+                    $(".draw").fadeIn(0, function(){
+                        $(this).css({
+                            Transform:"translateX(0px)",
+                            transition:"0.5s all"
+                        })
+                    })
+                });
+            });
+
+
+            $("body").click(function(e){
+
+                if ($(e.target).attr("class") === "container_menu") {
+
+                    $(".draw").css({Transform:"translateX(-105%)"}).fadeOut(function(){
+                        $(".container_menu").fadeOut();
+                    })
+                    
+                }
+            });
+           
+
+
+           
+            
+           
+
+
+
+            
 
            
             
